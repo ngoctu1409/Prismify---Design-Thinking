@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prismify - AI Personal Color</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Booking</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="find.png" alt="Search" class="search-icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Hero Background Image -->
+        <div class="hero-background">
+            <img src="slide1.png" alt="Hero Background" class="hero-image">
+        </div>
+        
+        <div class="hero-content">
+            <button class="cta-button">BOOK NOW</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Find Your Perfect Colors with AI</h2>
+            <p class="section-subtitle">Choose the package that fits your needs</p>
+            
+            <div class="services-icons">
+                <div class="service-icon-item" data-package="basic">
+                    <div class="service-icon basic">
+                        <img src="basic.png" alt="Basic Package" class="package-icon-image">
+                    </div>
+                    <h3 class="service-title">Basic</h3>
+                </div>
+                <div class="service-icon-item" data-package="style">
+                    <div class="service-icon style">
+                        <img src="style.png" alt="Style Package" class="package-icon-image">
+                    </div>
+                    <h3 class="service-title">Style</h3>
+                </div>
+                <div class="service-icon-item" data-package="advance">
+                    <div class="service-icon advance">
+                        <img src="advance.png" alt="Advance Package" class="package-icon-image">
+                    </div>
+                    <h3 class="service-title">Advance</h3>
+                </div>
+            </div>
+
+            <!-- Package Content -->
+            <div class="package-content" id="packageContent">
+                <div class="package-image">
+                    <!-- THAY ẢNH: Thay bằng ảnh minh họa package -->
+                    <div class="package-illustration" id="packageIllustration">
+                        Package Illustration<br>
+                        (Thay ảnh tại đây)
+                    </div>
+                </div>
+                <div class="package-details">
+                    <h3 class="package-title" id="packageTitle">Basic Package</h3>
+                    <div class="package-price" id="packagePrice">300.000 VNĐ</div>
+                    <ul class="package-features" id="packageFeatures">
+                        <li>AI Personal Color Test</li>
+                        <li>Basic color palette</li>
+                        <li>Makeup recommendations</li>
+                        <li>Email report</li>
+                    </ul>
+                    <button class="cta-button">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section" id="about">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h3 class="mission-title">We take care of our clients and our people.</h3>
+                    <p>Share your company's mission, vision, or background with your clients. Set yourself apart from the competition with a strong brand persona that puts your clients first.</p>
+                </div>
+                <div class="mission-image">
+                    <!-- THAY ẢNH: Thay src bằng ảnh team/mission -->
+                    <img src="aboutus.jpg" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="contact">
+        <div class="container">
+            <h2 class="booking-title">Book An Appointment</h2>
+            
+            <div class="booking-form-container">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="customerName" placeholder="Enter your name" required>
+                        <div class="error-message">Please enter your name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" id="customerPhone" placeholder="Enter your phone number" required>
+                        <div class="error-message">Please enter your phone number</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="customerEmail" placeholder="Enter your email" required>
+                        <div class="error-message">Please enter a valid email</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Select Services</label>
+                        <select id="selectedService" required>
+                            <option value="">Choose service</option>
+                            <option value="Basic Package">Basic Package</option>
+                            <option value="Style Package">Style Package</option>
+                            <option value="Advance Package">Advance Package</option>
+                        </select>
+                        <div class="error-message">Please select a service</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Time</label>
+                        <select id="selectedTime" required>
+                            <option value="">Choose time</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                        </select>
+                        <div class="error-message">Please select a time</div>
+                    </div>
+                    
+                    <button class="cta-button" id="bookingSubmitBtn" style="width: 100%; margin-top: 30px;">Book Now</button>
+                </div>
+                
+                <div class="calendar-container">
+                    <h3 class="calendar-header">September 2025</h3>
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                                <th>Su</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td class="booked">8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td class="booked">12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td class="booked">18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td class="unavailable"></td>
+                                <td class="unavailable"></td>
+                                <td class="unavailable"></td>
+                                <td class="unavailable"></td>
+                                <td class="unavailable"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="blog-title">Blog</h2>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <!-- THAY ẢNH: Thay background bằng ảnh blog post 1 -->
+                    <div class="blog-image">
+                        <img src="blog1.jpg" alt="Best lipstick for 2024 female" class="blog-image-content">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-card-title">Best lipstick for 2024 female</h3>
+                        <div class="blog-meta">Beauty • Nhu Tran • Jan 28, 2025</div>
+                        <p class="blog-excerpt">Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <!-- THAY ẢNH: Thay background bằng ảnh blog post 2 -->
+                    <div class="blog-image">
+                        <img src="blog2.jpg" alt="How to get clear skin fast" class="blog-image-content">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-card-title">How to get clear skin fast</h3>
+                        <div class="blog-meta">Beauty • Ha Anh Nguyen • Feb 15, 2025</div>
+                        <p class="blog-excerpt">Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <!-- THAY ẢNH: Thay background bằng ảnh blog post 3 -->
+                    <div class="blog-image">
+                        <img src="blog3.jpg" alt="New to clean lash extensions" class="blog-image-content">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-card-title">New to clean lash extensions</h3>
+                        <div class="blog-meta">Beauty • Anh Thu Bui • Mar 10, 2025</div>
+                        <p class="blog-excerpt">Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" style="color: white; text-decoration: underline; font-size: 1.1rem;">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>How Can We Help?</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#about">Our Brand</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Keep In Touch With Prismify</h3>
+                    <p style="color: #442900; margin-bottom: 15px;">Join The Prismify Newsletter And Be First To Hear About News And Offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-placeholder"></a>
+                        <a href="#" class="social-placeholder"></a>
+                        <a href="#" class="social-placeholder"></a>
+                        <a href="#" class="social-placeholder"></a>
+                        <a href="#" class="social-placeholder"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>📍 Ho Chi Minh City, Vietnam &nbsp;&nbsp;&nbsp; 📞 1 800 536 2401</p>
+                <p style="margin-top: 20px;">© 2025 Prismify. All Rights Reserved. &nbsp;&nbsp; Terms & Conditions &nbsp;&nbsp; Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Success Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h2 class="modal-title">Booking Complete!</h2>
+            <p class="modal-message">Thank you for choosing Prismify! Your appointment has been successfully booked.</p>
+            
+            <div class="booking-details" id="bookingDetails">
+                <h4>Booking Details:</h4>
+                <p><strong>Name:</strong> <span id="confirmName"></span></p>
+                <p><strong>Phone:</strong> <span id="confirmPhone"></span></p>
+                <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+                <p><strong>Service:</strong> <span id="confirmService"></span></p>
+                <p><strong>Date:</strong> <span id="confirmDate"></span></p>
+                <p><strong>Time:</strong> <span id="confirmTime"></span></p>
+            </div>
+            
+            <div class="qr-section">
+                <h4>Your Booking QR Code:</h4>
+                <div id="qrcode"></div>
+                <p class="qr-instruction">Show this QR code at your appointment</p>
+            </div>
+            
+            <p class="modal-message">We'll send you a confirmation email shortly. See you soon! </p>
+            <button class="modal-close-btn" id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
